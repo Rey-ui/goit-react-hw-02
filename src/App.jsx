@@ -2,6 +2,7 @@ import "./App.css";
 import Feedback from "./components/Feedback.jsx";
 import Options from "./components/Options.jsx";
 import Notification from "./components/Notification.jsx";
+import Description from "./components/Description.jsx";
 import { useEffect, useState } from "react";
 
 const reviewType = {
@@ -32,11 +33,7 @@ function App() {
   console.log(totalFeedback);
   return (
     <div>
-      <h1>Sip Happens Café</h1>
-      <p>
-        Please leave your feedback about our service by selecting one of the
-        options below.
-      </p>
+      <Description />
       <Options
         handleClick={updateFeedback}
         totalFeedback={totalFeedback}
